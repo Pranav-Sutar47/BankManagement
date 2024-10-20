@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="591.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.finalbank.ProfileController">
+   <children>
+      <Label layoutX="6.0" layoutY="7.0" prefHeight="31.0" prefWidth="694.0" stylesheets="@Styles/Profile.css" text="Profile" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="9.0" layoutY="46.0" prefHeight="239.0" prefWidth="213.0" styleClass="pane" stylesheets="@Styles/Profile.css" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="483.0" AnchorPane.topAnchor="46.0">
+         <children>
+            <Label layoutX="16.0" layoutY="10.0" prefHeight="29.0" prefWidth="162.0" stylesheets="@Styles/Profile.css" text="Change Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="oldPsw" layoutX="16.0" layoutY="50.0" prefHeight="25.0" prefWidth="174.0" promptText="Old Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="newPsw" layoutX="16.0" layoutY="87.0" prefHeight="25.0" prefWidth="174.0" promptText="New Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <DatePicker fx:id="bdate" layoutX="16.0" layoutY="124.0" promptText="Birth Date" />
+            <TextField fx:id="adNo" layoutX="16.0" layoutY="161.0" prefHeight="25.0" prefWidth="174.0" promptText="Adhar Number">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="changePsw" buttonType="RAISED" layoutX="16.0" layoutY="198.0" onAction="#changePassword" prefHeight="25.0" prefWidth="174.0" styleClass="but" stylesheets="@Styles/Profile.css" text="Change Password">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="9.0" layoutY="316.0" prefHeight="222.0" prefWidth="213.0" styleClass="pane" stylesheets="@Styles/Profile.css" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="483.0">
+         <children>
+            <Label layoutX="16.0" layoutY="10.0" prefHeight="29.0" prefWidth="162.0" stylesheets="@Styles/Profile.css" text="Create MPIN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="oldMpin" layoutX="16.0" layoutY="50.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter MPIN">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="newMpin" layoutX="16.0" layoutY="87.0" prefHeight="25.0" prefWidth="174.0" promptText="Renter MPIN">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="psw" layoutX="15.0" layoutY="126.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="createMpin" buttonType="RAISED" layoutX="16.0" layoutY="166.0" onAction="#createMpin" prefHeight="25.0" prefWidth="174.0" styleClass="but" stylesheets="@Styles/Profile.css" text="Create MPIN">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXScrollPane layoutX="232.0" layoutY="46.0" prefHeight="530.0" prefWidth="462.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="formPane" stylesheets="@Styles/Profile.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="24.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Name :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" editable="false" layoutX="196.0" layoutY="25.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="15.0" layoutY="66.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Address :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="address" editable="false" layoutX="196.0" layoutY="68.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="16.0" layoutY="108.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Mobile Number :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="mobileNo" editable="false" layoutX="195.0" layoutY="110.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="15.0" layoutY="148.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Date of Birth :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dateOfBirth" editable="false" layoutX="195.0" layoutY="150.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="15.0" layoutY="189.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Occupation :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="occupation" editable="false" layoutX="195.0" layoutY="191.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="15.0" layoutY="230.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Gender :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gender" editable="false" layoutX="195.0" layoutY="232.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="16.0" layoutY="274.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Uname :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="uname" editable="false" layoutX="196.0" layoutY="274.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label layoutX="15.0" layoutY="310.0" prefHeight="27.0" prefWidth="149.0" styleClass="formLabel" stylesheets="@Styles/Profile.css" text="Account Type :">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="accountType" editable="false" layoutX="196.0" layoutY="312.0" prefHeight="27.0" prefWidth="252.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+               </children>
+            </Pane>
+         </children>
+      </JFXScrollPane>
+   </children>
+</AnchorPane>

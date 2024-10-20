@@ -1,0 +1,23 @@
+.box{
+    -fx-background-color: #003300;
+}
+
+.labelLeft{
+    -fx-text-fill: #ffffff;
+}
+
+.but{
+    -fx-border-color: #04AA6D;
+}
+
+.but:hover{
+    -fx-background-color:#04AA6D;
+}
+
+.changeChoice .arrow{
+    -fx-background-color: #000000;
+}
+
+.choice-box .list-view{
+    -fx-pref-width : "350";
+}

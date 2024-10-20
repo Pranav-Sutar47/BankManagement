@@ -1,0 +1,19 @@
+.btnChange{
+    -fx-background-color:#008000;
+    -fx-text-fill:#ffffff;
+}
+
+.btnChange:hover{
+    -fx-background-color:#ffffff;
+    -fx-border-color:#003300;
+    -fx-text-fill:#008000;
+}
+
+.grad{
+    -fx-background-color: linear-gradient(to right,#004d00,#009900);
+    -fx-background-radius:10px;
+}
+
+.paneClass{
+    -fx-text-fill:#ffffff;
+}

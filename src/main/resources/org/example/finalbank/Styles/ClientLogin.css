@@ -1,0 +1,13 @@
+.btnColor{
+    -fx-background-color:#003300;
+    -fx-text-fill:#ffffff;
+}
+
+.btnColor:hover{
+    -fx-background-color: #006600;
+}
+
+.btnMain{
+    -fx-background-color: #f2f2f2;
+    -fx-text-fill: #001a00;
+}
